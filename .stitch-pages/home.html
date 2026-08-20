@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FoamMedic - Honest Spray Foam Diagnostics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#885420",
+                        secondary: "#563A25",
+                        accent: "#CCA13E",
+                        dark: "#332315",
+                        paper: "#FAF3E8",
+                        textDark: "#2B2117",
+                        olive: "#4E654E"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem", // Rounded-12 approx
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        headline: ["Inter", "sans-serif"],
+                        body: ["Public Sans", "sans-serif"],
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-paper text-textDark font-body antialiased">
+<!-- TopNavBar -->
+<header class="bg-[#FAF3E8] dark:bg-[#332315] font-headline text-headline-sm font-bold uppercase tracking-tight w-full top-0 sticky z-50 border-b border-[#563A25]/10 dark:border-[#563A25]/30 shadow-sm transition-all duration-300">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-headline font-black text-[#885420] dark:text-[#CCA13E] flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-3xl" data-icon="shield">shield</span>
+                FoamMedic
+            </a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#885420] border-b-2 border-[#885420] pb-1 font-bold" href="#">Home</a>
+<a class="text-[#563A25] dark:text-[#FAF3E8] hover:text-[#885420] transition-colors" href="#">About</a>
+<a class="text-[#563A25] dark:text-[#FAF3E8] hover:text-[#885420] transition-colors" href="#">Topics</a>
+<a class="text-[#563A25] dark:text-[#FAF3E8] hover:text-[#885420] transition-colors" href="#">Blog</a>
+<a class="text-[#563A25] dark:text-[#FAF3E8] hover:text-[#885420] transition-colors" href="#">Contact</a>
+</nav>
+<div class="hidden lg:flex items-center gap-4">
+<span class="text-secondary dark:text-paper font-semibold text-sm">(800) FOAM-MEDIC</span>
+<a class="bg-primary hover:bg-secondary text-white px-5 py-2.5 rounded-lg transition-all active:scale-95 duration-150 shadow-md" href="#">Get a Second Opinion</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Toggle Menu" class="md:hidden text-secondary p-2 rounded-lg hover:bg-[#F5E6D3] dark:hover:bg-[#2B2117] transition-all">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full h-[80vh] min-h-[600px] flex items-center justify-center bg-dark overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Professional inspector examining spray foam insulation in an attic" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQzkcS8q5U8YZPERvqEoJcGVPeb3BxVGbLbwfn5oyuUhR_s0FKY0kQVJWSmZWHiuT0P_pQh1CfEyCepBZYCTbIfRyI0QOiDmDu4uUCcZF5-KYCdTC54ktQ7dH-9rmEs9vXGgYUoimb6ul2BSXHwWappsY2YgSWwwJQEPBrRQrfmipZ0Bb5pWvE9zAXoXfzqaSyH-VJXi7Xqcp5j1BEBpyDltINufomjXatsI0Bs4zbOdpF5lwT3tYpe2uVTv8XD7JpFqkULTCttws"/>
+<div class="absolute inset-0 bg-dark/60 mix-blend-multiply"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+<h1 class="font-headline font-black text-5xl md:text-6xl text-paper mb-6 leading-tight tracking-tight drop-shadow-lg">
+                Think Your Spray Foam <br class="hidden md:block"/>Job Went Wrong?
+            </h1>
+<p class="font-body text-xl md:text-2xl text-paper/90 mb-10 max-w-3xl mx-auto leading-relaxed drop-shadow-md">
+                An honest diagnostic resource explaining what's a real problem, what's normal, and what a realistic fix looks like—even if that means full removal.
+            </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto bg-accent hover:bg-yellow-600 text-dark font-headline font-bold text-lg px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-xl text-center" href="#">
+                    Get a Second Opinion
+                </a>
+<a class="w-full sm:w-auto bg-transparent border-2 border-paper hover:bg-white/10 text-paper font-headline font-semibold text-lg px-8 py-4 rounded-lg transition-all text-center backdrop-blur-sm" href="#topics">
+                    See What to Check First
+                </a>
+</div>
+</div>
+</section>
+<!-- Trust Bar -->
+<section class="bg-paper py-8 border-b border-secondary/10">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="flex flex-col items-center justify-center p-4">
+<span class="material-symbols-outlined text-4xl text-primary mb-2" data-icon="assignment_turned_in">assignment_turned_in</span>
+<span class="font-headline font-bold text-secondary text-sm md:text-base uppercase tracking-wide">Documented Reality</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4">
+<span class="material-symbols-outlined text-4xl text-primary mb-2" data-icon="search">search</span>
+<span class="font-headline font-bold text-secondary text-sm md:text-base uppercase tracking-wide">Fact-Based Diagnostics</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4">
+<span class="material-symbols-outlined text-4xl text-primary mb-2" data-icon="verified_user">verified_user</span>
+<span class="font-headline font-bold text-secondary text-sm md:text-base uppercase tracking-wide">Not A Sales Pitch</span>
+</div>
+<div class="flex flex-col items-center justify-center p-4">
+<span class="material-symbols-outlined text-4xl text-primary mb-2" data-icon="construction">construction</span>
+<span class="font-headline font-bold text-secondary text-sm md:text-base uppercase tracking-wide">Building Science First</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Topics Grid (Bento Style) -->
+<section class="py-20 bg-white" id="topics">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-12">
+<p class="font-headline text-accent font-bold uppercase tracking-widest text-sm mb-2">The Topics</p>
+<h2 class="font-headline font-black text-4xl text-textDark mb-4">Get the real picture before you panic</h2>
+<p class="font-body text-lg text-secondary max-w-2xl">We break down the most common concerns homeowners have after a spray foam installation, separating normal curing characteristics from genuine application failures.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group bg-paper rounded-lg p-6 border border-secondary/10 hover:shadow-xl transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="help_center">help_center</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3 relative z-10">Problem or Normal?</h3>
+<p class="font-body text-secondary mb-6 flex-grow relative z-10">Learn how to distinguish between standard curing processes, minor aesthetic imperfections, and signs of a fundamentally flawed application that requires attention.</p>
+<a class="inline-flex items-center font-headline font-semibold text-primary hover:text-accent transition-colors relative z-10" href="#">
+                        Read the Guide <span class="material-symbols-outlined ml-1 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Card 2 -->
+<div class="group bg-paper rounded-lg p-6 border border-secondary/10 hover:shadow-xl transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="air">air</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3 relative z-10">Off-gassing &amp; Odor</h3>
+<p class="font-body text-secondary mb-6 flex-grow relative z-10">Understand the difference between temporary installation smells and persistent chemical odors indicating improper mixing or inadequate ventilation.</p>
+<a class="inline-flex items-center font-headline font-semibold text-primary hover:text-accent transition-colors relative z-10" href="#">
+                        Read the Guide <span class="material-symbols-outlined ml-1 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Card 3 -->
+<div class="group bg-paper rounded-lg p-6 border border-secondary/10 hover:shadow-xl transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="water_drop">water_drop</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3 relative z-10">Mold &amp; Moisture</h3>
+<p class="font-body text-secondary mb-6 flex-grow relative z-10">Investigate how poorly applied closed-cell or open-cell foam can trap moisture, create thermal bridging, and lead to hidden rot or mold growth in the assembly.</p>
+<a class="inline-flex items-center font-headline font-semibold text-primary hover:text-accent transition-colors relative z-10" href="#">
+                        Read the Guide <span class="material-symbols-outlined ml-1 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Card 4 -->
+<div class="group bg-paper rounded-lg p-6 border border-secondary/10 hover:shadow-xl transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="delete">delete</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3 relative z-10">Removal vs Patch</h3>
+<p class="font-body text-secondary mb-6 flex-grow relative z-10">Why "patching" a bad chemical mixture often fails. Exploring the harsh reality that a genuine failure usually necessitates complete removal of the defective foam.</p>
+<a class="inline-flex items-center font-headline font-semibold text-primary hover:text-accent transition-colors relative z-10" href="#">
+                        Read the Guide <span class="material-symbols-outlined ml-1 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Card 5 -->
+<div class="group bg-paper rounded-lg p-6 border border-secondary/10 hover:shadow-xl transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="fact_check">fact_check</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3 relative z-10">Documentation Checklist</h3>
+<p class="font-body text-secondary mb-6 flex-grow relative z-10">Step-by-step guidance on how to document a failed installation for insurance, warranties, or potential litigation. What photos to take and records to keep.</p>
+<a class="inline-flex items-center font-headline font-semibold text-primary hover:text-accent transition-colors relative z-10" href="#">
+                        Read the Guide <span class="material-symbols-outlined ml-1 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Card 6 -->
+<div class="group bg-paper rounded-lg p-6 border border-secondary/10 hover:shadow-xl transition-all duration-300 flex flex-col h-full relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-primary" data-icon="person_search">person_search</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-primary mb-3 relative z-10">Finding a Contractor</h3>
+<p class="font-body text-secondary mb-6 flex-grow relative z-10">If removal or remediation is necessary, how to vet contractors who actually understand building science and the specific challenges of removing defective foam.</p>
+<a class="inline-flex items-center font-headline font-semibold text-primary hover:text-accent transition-colors relative z-10" href="#">
+                        Read the Guide <span class="material-symbols-outlined ml-1 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#332315] dark:bg-[#2B2117] full-width bottom-0 w-full pt-16 pb-8 border-t-4 border-accent">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 mb-12 max-w-7xl mx-auto">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<a class="font-headline text-2xl font-bold text-[#CCA13E] flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" data-icon="shield">shield</span>
+                    FoamMedic
+                </a>
+<p class="font-body text-body-sm text-[#FAF3E8]/80 max-w-xs">
+                    Honest diagnostics for better building science. We provide independent, fact-based resources for homeowners facing spray foam complications.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-[#FAF3E8] mb-4 uppercase tracking-wider text-sm">Resources</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="font-body text-body-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all" href="#">Expert Diagnostics</a></li>
+<li><a class="font-body text-body-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all" href="#">Litigation Support</a></li>
+<li><a class="font-body text-body-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all" href="#">Removal Standards</a></li>
+<li><a class="font-body text-body-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all" href="#">Moisture Analysis</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-[#FAF3E8] mb-4 uppercase tracking-wider text-sm">Company</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="font-body text-body-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all" href="#">About CCA</a></li>
+<li><a class="font-body text-body-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all" href="#">Contact Us</a></li>
+<li><a class="font-body text-body-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all" href="#">Privacy Policy</a></li>
+<li><a class="font-body text-body-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<!-- Contact Column -->
+<div class="col-span-1">
+<h4 class="font-headline font-bold text-[#FAF3E8] mb-4 uppercase tracking-wider text-sm">Get Help</h4>
+<a class="inline-block bg-primary hover:bg-[#6c4219] text-white px-6 py-3 rounded-lg font-headline font-semibold transition-colors mb-4 w-full text-center" href="#">
+                    Request Consultation
+                </a>
+<p class="font-body text-body-sm text-[#CCA13E] font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-sm" data-icon="phone">phone</span>
+                    (800) FOAM-MEDIC
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pt-8 border-t border-[#FAF3E8]/10 text-center md:text-left">
+<p class="font-body text-sm text-[#FAF3E8]/60">© 2024 FoamMedic by CCA. Honest diagnostics for better building science. Not an insurance provider.</p>
+</div>
+</footer>
+</body></html>

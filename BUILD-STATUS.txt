@@ -1,0 +1,119 @@
+foammedic.com — BUILD STATUS
+Generated: 2026-08-20
+Builder: josh-desk-3@mesh
+
+DOMAIN CLASSIFICATION & PRE-BUILD RESEARCH
+Trade-service educational/diagnostic content site (NOT insurance — zero insurance-sales
+language, an explicit "no, this isn't insurance" line is even in the home FAQ). Pre-scaffold
+real-business-name check (dispatched research subagent): confirmed no direct same-industry name
+collision — "FOAMmedic" (no space) is an active EMS/paramedic continuing-education
+podcast/blog (foammedic.org), unrelated field and different TLD, so no trademark risk but it will
+share SERP space with EMS content on a bare "foammedic" name search. No spray-foam-insulation,
+mattress, packaging, automotive, or pool business uses "foam medic."
+
+ANGLE CORRECTION (dispatched before any building, per standing practice): the dispatcher's
+proposed "medic/repair" framing was checked against real DataForSEO demand and found NOT to match
+actual search behavior — people search generic symptom/removal terms (spray foam insulation
+problems ~320/mo, issues ~320/mo, removal ~320-880/mo, off-gassing ~210/mo), not "repair
+specialist"/"second opinion"/"medic" language, which returned near-zero volume. More importantly:
+8+ federal class-action suits (Demilec, Masco, et al.) establish that the accepted remedy for
+genuinely defective spray foam is FULL REMOVAL AND REBUILD, not patch-repair — so an active
+"we fix it" pitch would have been misleading. A real regional competitor ("Home Energy Medics")
+also already uses similar health-metaphor branding for spray foam installation specifically, and
+the "Doctor/Medic" metaphor pattern is independently oversaturated in this trade (Spray Foam
+Doctor, Doctor Spray Foam, Foam Doctor, Doctor Energy Smart all already exist). Given all of this,
+the site was built as an HONEST DIAGNOSTIC/SECOND-OPINION resource — not an active-repair service
+pitch — explicitly telling homeowners when removal (not repair) is the real answer, and
+positioning CCA as a referral/second-opinion point rather than "the fix-it company." This keeps
+the legally-clear domain name while avoiding both the misleading-service-claim risk and the
+derivative-of-an-existing-competitor risk. Differentiated from sibling sprayfoamscience.com (which
+covers PRE-purchase building-science education) by focusing on people who ALREADY have spray foam
+and suspect a problem — a distinct audience and search intent, not a duplicate.
+
+ROUTES: 24 static routes generated (next build output, confirmed via `pnpm run build`)
+  - / (home)
+  - /about
+  - /topics (index) + 6 topic pages: is-your-spray-foam-actually-a-problem-or-normal,
+      spray-foam-off-gassing-and-persistent-odor, spray-foam-mold-and-moisture-signs,
+      why-removal-not-patch-repair-is-usually-the-real-fix,
+      what-to-document-before-you-call-anyone, how-to-find-a-qualified-remediation-contractor
+  - /blog (index) + 5 posts: spray-foam-litigation-what-it-actually-established,
+      off-gassing-vs-normal-cure-smell, what-a-legitimate-inspection-actually-checks,
+      spray-foam-delamination-explained, documentation-checklist-before-you-hire-anyone
+  - /contact
+  - /get-a-second-opinion (soft-conversion primary CTA — a free diagnostic request, explicitly
+    NOT "book a repair," consistent with the honest positioning above)
+  - /privacy, /terms (terms explicitly state FoamMedic does not perform removal/repair directly —
+    it connects homeowners to a qualified contractor)
+  - /sitemap.xml, /robots.txt, /_not-found
+
+WORD COUNT (real counts via `wc -w`, not estimated): 6 topics with intro + 4 sections + key
+takeaways + FAQ each, comparable depth to sibling builds tonight. Blog posts individually
+verified: what-a-legitimate-inspection-actually-checks 560, spray-foam-delamination-explained 534,
+spray-foam-litigation-what-it-actually-established 527, off-gassing-vs-normal-cure-smell 516,
+documentation-checklist-before-you-hire-anyone 521 (2,658 total). All content is grounded in real
+chemistry/physics (off-ratio mixing mechanics, MDI/isocyanate cure chemistry, vapor-retarder
+classes) consistent with sprayfoamscience.com's accuracy bar, plus the real litigation finding
+(Demilec/Masco class actions) as the factual basis for the honest removal-vs-repair framing — no
+invented case studies, no fabricated statistics.
+
+HOMEPAGE: 9 sections — Hero(inspector-in-attic photo, scrim raised to 55% per tonight's recurring
+gate-fail pattern, calm non-alarmist copy) + TopicsGrid(6 cards) + WhyThisMatters + ProcessSteps +
+Stats(inverted dark band, includes an honest "0 fabricated case studies or scare tactics" stat) +
+TrustSignals + FAQ(6 Q&A, includes explicit "is this insurance" denial) + CTA(photo band) + Footer.
+
+DESIGN — MEDICAL-CLICHE AVOIDANCE (explicit hard rule, verified): despite the "Medic" brand name,
+zero medical-cross red, zero clinical-white/sterile-hospital look, zero first-aid/EMS visual
+cliches anywhere. Palette is deep amber-bronze #885420, deep brown #563A25, warm gold #CCA13E,
+deep brown-black #332315 dark bands, olive-sage #4E654E — darker and richer than every sibling
+foam site's brighter rust/copper/cedar/amber/brick/mustard primaries tonight, deliberately chosen
+for a "steady, trustworthy diagnostic expert" feel rather than emergency-medical or bright-sales
+energy. Icons are clipboard-check/magnifying-glass/shield style, never a medical cross. Verified
+via grep sweep of all copy (zero "stethoscope/first aid/ambulance/ER/paramedic" matches) and via
+the image-generation agent's explicit visual confirmation (zero red crosses, lab coats, or EMS
+imagery across all 9 generated images — one image uses a respirator/hard hat as standard job-site
+PPE, not medical attire, correctly distinguished).
+
+IMAGES: 9 generated via Gemini (gemini-2.5-flash-image), 0 HF/nscale fallback needed, no off-prompt
+mismatches this build. Total public/images/ = 1.3MB, largest file 193KB
+(topic-removal-reality.jpg). Filenames: hero-inspection.jpg, topic-inspection-check.jpg,
+topic-odor-check.jpg, topic-moisture-signs.jpg, topic-removal-reality.jpg,
+topic-documentation.jpg, hero-application-still.jpg, about-credibility.jpg, cta-band.jpg.
+
+STITCH COVERAGE: 3 real AI-generated screens (home, removal-vs-repair topic-detail template, Get a
+Second Opinion contact page) — zero quota issues, no hand-authored fallback needed. Stitch project
+projects/9034070170231014659, design system assets/15593979274960502056. Verified via
+`ls .stitch-pages/*.html` (3 files present). Used known-good Stitch font enum values (INTER +
+PUBLIC_SANS) directly from the start, based on tonight's earlier finding that Fraunces/Karla/Lora/
+Open_Sans all fail the design-system API — avoided that failure mode entirely this build.
+
+FORMS: contact (4-field: name/phone/email/message) + secondopinion (5-field: name/phone/email/
+what-are-you-seeing dropdown/details) — Netlify static pattern (data-netlify, honeypot, POST to
+/__forms.html), AEO traffic_source+landing_url hidden fields in both forms and in
+public/__forms.html decoy. netlify.toml has both webhook notifications wired (tenant=josh,
+site=foammedic.com), no plugin-nextjs.
+
+GATE RESULT: pre-deploy-content-check.sh PASS (exit 0) on FIRST run — `git init -b main` used from
+the start per tonight's established fix. 12 own-keyword hits, remote correctly references the
+domain slug, no banned hues, no decaying scrim (hero and topic-detail scrims both raised to /55
+proactively, not left at the bare /50 minimum, per tonight's recurring gate-fail pattern), 3 stitch
+screens across 10 routes.
+
+BUILD: pnpm build GREEN, 24 static routes, static export (output:'export'), next resolved exactly
+15.3.9 (verified in build output, no floating-version issue on this build), react/react-dom 19.2.0,
+pnpm-lock.yaml only, pnpm-workspace.yaml correct from the start (packages: ["."]) +
+onlyBuiltDependencies sharp. Placeholder sweep: zero matches. Insurance-language sweep: zero
+matches except the intentional "no, this isn't insurance" FAQ denial. Medical-cliche copy sweep:
+zero matches. Leftover-scaffold-premise sweep (VR/get-updates artifacts from the copied template):
+zero matches. git tree clean (node_modules/.next/out/.pnpm-store not tracked).
+
+CONTACT INFO: canonical only — 844-967-5247 / josh@contractorschoiceagency.com /
+12220 E Riggs Rd, Chandler, AZ 85249. No fabricated testimonials, star ratings, named case
+studies, or invented statistics — every factual claim (litigation precedent, cure chemistry,
+vapor-retarder thresholds) traces to real, citable fact.
+
+KNOWN GAP (flagged, not blocking): this container has no GITHUB_TOKEN, no gh auth, and no write
+access to /mnt/agent-mesh/github-push-requests. All work committed to a standalone local git repo
+(git init -b main directly inside foammedic.com/) under josh-desk-3@mesh, remote set to
+MCERQUA/foammedic.com.git (unreachable from here) — needs host hand-off for repo creation + push,
+then Netlify hookup. Same known gap as every other site built tonight.

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Get a Second Opinion | FoamMedic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#885420',
+                            container: '#F5E6D3',
+                        },
+                        secondary: {
+                            DEFAULT: '#563A25',
+                        },
+                        accent: {
+                            DEFAULT: '#CCA13E',
+                        },
+                        dark: {
+                            DEFAULT: '#332315',
+                            card: '#2B2117',
+                        },
+                        olive: {
+                            DEFAULT: '#4E654E',
+                        },
+                        paper: {
+                            DEFAULT: '#FAF3E8',
+                        },
+                        text: {
+                            DEFAULT: '#2B2117',
+                        }
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter", "sans-serif"],
+                        "display": ["Inter", "sans-serif"],
+                        "body": ["Public Sans", "sans-serif"],
+                        "label": ["Public Sans", "sans-serif"]
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Public Sans', sans-serif; color: #2B2117; }
+        h1, h2, h3, h4, h5, h6, .font-headline { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-white">
+<!-- TopNavBar -->
+<nav class="bg-[#FAF3E8] dark:bg-[#332315] docked full-width top-0 sticky border-b border-[#563A25]/10 dark:border-[#563A25]/30 shadow-sm z-50">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<a class="text-2xl font-headline font-black text-[#885420] dark:text-[#CCA13E] flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+                FoamMedic
+            </a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-6">
+<a class="text-[#563A25] dark:text-[#FAF3E8] hover:text-[#885420] transition-colors font-headline text-sm font-bold uppercase tracking-tight hover:bg-[#F5E6D3] dark:hover:bg-[#2B2117] rounded-lg px-3 py-2 transition-all" href="#">Home</a>
+<a class="text-[#563A25] dark:text-[#FAF3E8] hover:text-[#885420] transition-colors font-headline text-sm font-bold uppercase tracking-tight hover:bg-[#F5E6D3] dark:hover:bg-[#2B2117] rounded-lg px-3 py-2 transition-all" href="#">About</a>
+<a class="text-[#563A25] dark:text-[#FAF3E8] hover:text-[#885420] transition-colors font-headline text-sm font-bold uppercase tracking-tight hover:bg-[#F5E6D3] dark:hover:bg-[#2B2117] rounded-lg px-3 py-2 transition-all" href="#">Topics</a>
+<a class="text-[#563A25] dark:text-[#FAF3E8] hover:text-[#885420] transition-colors font-headline text-sm font-bold uppercase tracking-tight hover:bg-[#F5E6D3] dark:hover:bg-[#2B2117] rounded-lg px-3 py-2 transition-all" href="#">Blog</a>
+<a class="text-[#885420] border-b-2 border-[#885420] pb-1 font-bold font-headline text-sm uppercase tracking-tight px-3 py-2" href="#">Contact</a>
+</div>
+<div class="hidden md:flex items-center gap-4">
+<a class="font-headline font-semibold text-secondary text-sm" href="tel:800FOAMMEDIC">(800) FOAM-MEDIC</a>
+<a class="bg-primary hover:bg-secondary text-white px-5 py-2.5 rounded-lg font-headline font-bold text-sm transition-colors shadow-sm" href="#">Get a Second Opinion</a>
+</div>
+<!-- Mobile Menu Button -->
+<button class="md:hidden text-secondary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="bg-[#FAF3E8] pt-20 pb-16 px-6 relative overflow-hidden">
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<span class="inline-block font-headline font-bold text-[#885420] tracking-widest uppercase text-sm mb-4 px-4 py-1 border border-[#885420]/30 rounded-full bg-white/50">FREE &amp; NO OBLIGATION</span>
+<h1 class="text-5xl md:text-6xl font-headline font-black text-[#2B2117] mb-6 tracking-tight leading-tight">Get a Second Opinion</h1>
+<p class="text-lg md:text-xl text-[#563A25] font-body leading-relaxed max-w-3xl mx-auto mb-12">
+                Get an honest, straight read on your spray foam concerns with no pressure and no incentive to make things sound worse than they are. We provide independent diagnostics grounded in building science, not sales pitches.
+            </p>
+</div>
+<!-- Trust Bar -->
+<div class="max-w-5xl mx-auto mt-8 border-t border-[#885420]/10 pt-8 pb-4">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[#CCA13E] text-3xl" style="font-variation-settings: 'FILL' 1;">plumbing</span>
+<span class="font-headline font-semibold text-sm text-[#563A25] uppercase tracking-wide">Expert Diagnostics</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[#CCA13E] text-3xl" style="font-variation-settings: 'FILL' 1;">gavel</span>
+<span class="font-headline font-semibold text-sm text-[#563A25] uppercase tracking-wide">Litigation Support</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[#CCA13E] text-3xl" style="font-variation-settings: 'FILL' 1;">cleaning_services</span>
+<span class="font-headline font-semibold text-sm text-[#563A25] uppercase tracking-wide">Removal Standards</span>
+</div>
+<div class="flex flex-col items-center gap-2">
+<span class="material-symbols-outlined text-[#CCA13E] text-3xl" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<span class="font-headline font-semibold text-sm text-[#563A25] uppercase tracking-wide">Moisture Analysis</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Section (Two Columns) -->
+<section class="bg-white py-20 px-6">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Column: What Happens Next -->
+<div class="lg:col-span-5">
+<h2 class="text-3xl font-headline font-bold text-[#2B2117] mb-8">What Happens Next</h2>
+<div class="space-y-8">
+<div class="flex gap-4 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#FAF3E8] border-2 border-[#885420]/20 flex items-center justify-center font-headline font-bold text-[#885420] text-xl group-hover:bg-[#885420] group-hover:text-white transition-colors duration-300">1</div>
+<div>
+<h3 class="font-headline font-semibold text-xl text-[#2B2117] mb-2 mt-1">Submit your details</h3>
+<p class="text-[#563A25] font-body leading-relaxed">Fill out the secure form with your basic information and what you're observing. The more detail, the better we can prepare.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#FAF3E8] border-2 border-[#885420]/20 flex items-center justify-center font-headline font-bold text-[#885420] text-xl group-hover:bg-[#885420] group-hover:text-white transition-colors duration-300">2</div>
+<div>
+<h3 class="font-headline font-semibold text-xl text-[#2B2117] mb-2 mt-1">Expert review of your case</h3>
+<p class="text-[#563A25] font-body leading-relaxed">Our building science specialists will review your submission to understand the potential scope and underlying mechanisms of the issue.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start group">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#FAF3E8] border-2 border-[#885420]/20 flex items-center justify-center font-headline font-bold text-[#885420] text-xl group-hover:bg-[#885420] group-hover:text-white transition-colors duration-300">3</div>
+<div>
+<h3 class="font-headline font-semibold text-xl text-[#2B2117] mb-2 mt-1">Honest recommendation</h3>
+<p class="text-[#563A25] font-body leading-relaxed">We will contact you to discuss next steps, which may include an on-site diagnostic investigation. We'll tell you straight if it's a real problem or just cosmetic.</p>
+</div>
+</div>
+</div>
+<div class="mt-12 p-6 bg-[#FAF3E8] rounded-xl border border-[#885420]/10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-[#885420] text-3xl mt-1">verified_user</span>
+<div>
+<h4 class="font-headline font-bold text-[#2B2117] mb-1">Your Privacy Matters</h4>
+<p class="text-sm text-[#563A25] font-body">Information shared is strictly confidential and used solely for diagnostic assessment. We never sell your data.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Form Card -->
+<div class="lg:col-span-7">
+<div class="bg-white rounded-xl shadow-xl border border-[#563A25]/10 p-8 md:p-10 relative overflow-hidden">
+<!-- Decorative subtle accent -->
+<div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#885420] to-[#CCA13E]"></div>
+<h3 class="text-2xl font-headline font-bold text-[#2B2117] mb-6">Request Diagnostic Review</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-semibold font-body text-[#563A25] mb-2" for="first_name">First Name</label>
+<input class="w-full rounded-lg border-[#563A25]/20 focus:border-[#885420] focus:ring-[#885420] bg-[#FAF3E8]/50 shadow-sm font-body text-[#2B2117] py-3" id="first_name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-semibold font-body text-[#563A25] mb-2" for="last_name">Last Name</label>
+<input class="w-full rounded-lg border-[#563A25]/20 focus:border-[#885420] focus:ring-[#885420] bg-[#FAF3E8]/50 shadow-sm font-body text-[#2B2117] py-3" id="last_name" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-semibold font-body text-[#563A25] mb-2" for="email">Email Address</label>
+<input class="w-full rounded-lg border-[#563A25]/20 focus:border-[#885420] focus:ring-[#885420] bg-[#FAF3E8]/50 shadow-sm font-body text-[#2B2117] py-3" id="email" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-semibold font-body text-[#563A25] mb-2" for="phone">Phone Number</label>
+<input class="w-full rounded-lg border-[#563A25]/20 focus:border-[#885420] focus:ring-[#885420] bg-[#FAF3E8]/50 shadow-sm font-body text-[#2B2117] py-3" id="phone" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold font-body text-[#563A25] mb-2" for="issue_type">What Are You Seeing?</label>
+<select class="w-full rounded-lg border-[#563A25]/20 focus:border-[#885420] focus:ring-[#885420] bg-[#FAF3E8]/50 shadow-sm font-body text-[#2B2117] py-3" id="issue_type">
+<option disabled="" selected="" value="">Select primary concern...</option>
+<option value="odor">Persistent Off-Gassing / Fishy Odor</option>
+<option value="shrinkage">Foam Shrinkage / Pulling Away</option>
+<option value="moisture">Moisture Accumulation / Condensation</option>
+<option value="mold">Suspected Mold Growth</option>
+<option value="installation">Poor Installation / Messy Application</option>
+<option value="other">Other Concern</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-semibold font-body text-[#563A25] mb-2 flex justify-between" for="message">
+<span>Tell Us More</span>
+<span class="text-[#563A25]/60 font-normal">Optional</span>
+</label>
+<textarea class="w-full rounded-lg border-[#563A25]/20 focus:border-[#885420] focus:ring-[#885420] bg-[#FAF3E8]/50 shadow-sm font-body text-[#2B2117] py-3" id="message" placeholder="Briefly describe the history of the installation or any specific symptoms..." rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full bg-[#885420] hover:bg-[#563A25] text-white font-headline font-bold text-lg py-4 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 flex justify-center items-center gap-2 group" type="submit">
+                                Get My Second Opinion
+                                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<div class="text-center mt-6">
+<p class="text-[#563A25] font-body">Prefer to talk now? Call <a class="font-headline font-bold text-[#885420] hover:text-[#CCA13E] transition-colors" href="tel:800FOAMMEDIC">(800) FOAM-MEDIC</a></p>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#332315] dark:bg-[#2B2117] full-width bottom-0">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 w-full px-8 py-12 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-2">
+<a class="font-headline text-xl font-bold text-[#CCA13E] flex items-center gap-2 mb-4" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+                    FoamMedic
+                </a>
+<p class="font-body text-sm text-[#FAF3E8]/80 max-w-md leading-relaxed">
+                    Honest diagnostics for better building science. We provide independent evaluations of spray foam installations, focusing on facts and structural integrity.
+                </p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-[#FAF3E8] mb-4 uppercase tracking-wider text-sm">Services</h4>
+<ul class="space-y-3">
+<li><a class="font-body text-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all focus:ring-2 focus:ring-[#CCA13E] rounded" href="#">Expert Diagnostics</a></li>
+<li><a class="font-body text-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all focus:ring-2 focus:ring-[#CCA13E] rounded" href="#">Litigation Support</a></li>
+<li><a class="font-body text-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all focus:ring-2 focus:ring-[#CCA13E] rounded" href="#">Removal Standards</a></li>
+<li><a class="font-body text-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all focus:ring-2 focus:ring-[#CCA13E] rounded" href="#">Moisture Analysis</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-[#FAF3E8] mb-4 uppercase tracking-wider text-sm">Legal</h4>
+<ul class="space-y-3">
+<li><a class="font-body text-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all focus:ring-2 focus:ring-[#CCA13E] rounded" href="#">Privacy Policy</a></li>
+<li><a class="font-body text-sm text-[#FAF3E8]/80 hover:text-[#CCA13E] hover:underline transition-all focus:ring-2 focus:ring-[#CCA13E] rounded" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-[#FAF3E8]/10 w-full px-8 py-6 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body text-sm text-[#FAF3E8]/60">© 2024 FoamMedic by CCA. Honest diagnostics for better building science.</p>
+</div>
+</footer>
+</body></html>
