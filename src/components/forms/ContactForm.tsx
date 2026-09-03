@@ -162,6 +162,22 @@ export function ContactForm() {
                   className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors resize-none" />
               </div>
 
+              <div>
+                <label htmlFor="street_address" className="block text-sm font-medium mb-2">Street Address</label>
+                <input id="street_address" name="street_address" type="text" className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" />
+              </div>
+              <div>
+                <label htmlFor="city" className="block text-sm font-medium mb-2">City</label>
+                <input id="city" name="city" type="text" className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" />
+              </div>
+              <div>
+                <label htmlFor="state" className="block text-sm font-medium mb-2">State</label>
+                <input id="state" name="state" type="text" className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" />
+              </div>
+              <div>
+                <label htmlFor="zip" className="block text-sm font-medium mb-2">ZIP Code</label>
+                <input id="zip" name="zip" type="text" className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" />
+              </div>
               {error && <p className="text-sm text-destructive">{error}</p>}
 
               <button
